@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet"> 
+    <title>Dreamcatcher</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Dream<span>catcher</span></a>
+
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="">STAN</a></li>
+            <li><a href="">THEM</a></li>
+            <li><a href="">NOW!</a></li>
+        </ul>
+
+        <div class="right-nav">
+            <a href="#" class="h-btn">BLAHBLAH</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+        
+    </header>
+    
+    <section class="hero">
+            <div class="container">
+                <h6>#1 fav </h6>
+                <h3> Dreamcatcher </h3>
+                <h1> Dreamcatcher </h1>
+                <p> Dreamcatcher has come to be known as "The Face of Rock in K-pop" and their music has been praised for its distinctive sound with elements of rock and metal. The group has developed a stronger international rather than domestic popularity and a reputation for touring overseas often.</p>
+                <div class="main-btnn">
+                    <a href="#"> click >></a>
+                    <a href="https://www.youtube.com/@Dreamcatcherofficial" class="cta"><i class="ri-play-fill"></i>Watch Them Here</a>
+                </div>
+            </div>
+    </section>
+
+    <div class="social">
+        <a href="https://www.instagram.com/hf_dreamcatcher/" target="_blank"><i class="ri-instagram-fill"></i></a>
+        <a href="https://twitter.com/hf_dreamcatcher" target="_blank"><i class="ri-twitter-fill"></i></a>
+        <a href="https://www.tiktok.com/@official_dreamcatcher?lang=en" target="_blank"><i class="ri-tiktok-fill"></i></a>
+        <a href="https://www.facebook.com/happyfacedreamcatcher" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+        <a href="https://www.youtube.com/@Dreamcatcherofficial" target="_blank"><i class="ri-youtube-fill"></i></a>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+
+        const sr = ScrollReveal ({
+            distance: '40px',
+            duration: 2500,
+            reset: true
+        });
+
+        sr.reveal('.container h6',{delay:150, origin: 'left'});
+
+        sr.reveal('.container h3',{delay:250, origin: 'right'});
+
+        sr.reveal('.container p',{delay:550, origin: 'left'});
+
+        sr.reveal('.container h1',{delay:400, origin: 'top'});
+
+        sr.reveal('.main-btnn',{delay:700, origin: 'bottom'});
+
+        sr.reveal('.social',{delay:850, origin: 'right'});
+
+    </script>
+</body>
+</html>
